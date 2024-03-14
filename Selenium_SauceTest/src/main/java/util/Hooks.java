@@ -17,8 +17,8 @@ public class Hooks {
         driver = DriverFactory.initialize_Driver(browser);
     }
 
-    @After
-    public void after() {
-        driver.quit();
-    }
+//    @After
+//    public void after() {
+//        driver.quit();
+//    }
 }

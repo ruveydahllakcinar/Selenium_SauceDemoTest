@@ -39,4 +39,40 @@ public class LoginPageStepDefinitions {
     public void writeForPasswordField(String password) {
         loginPage.writePasswordForPasswordField(password);
     }
+
+    @When("write Correct {string} for username field")
+    public void writeCorrectForUsernameField(String correctUsername) {
+        loginPage.writeCorrectForUsernameField(correctUsername);
+    }
+
+    @When("write False {string} for password field")
+    public void writeFalseForPasswordField(String falsePass) {
+        loginPage.writeFalseForPasswordField(falsePass);
+    }
+
+    @Then("Check {string} message about dont match password")
+    public void checkMessageAboutDontMatchPassword(String dontMatch) {
+        loginPage.checkMessageAboutDontMatch(dontMatch);
+    }
+
+    @When("write False {string} for username field")
+    public void writeFalseForUsernameField(String falseUsername) {
+        loginPage.writeFalseForUsernameField(falseUsername);
+    }
+
+    @When("write correct {string} for password field")
+    public void writeCorrectForPasswordField(String correctPassword) {
+        loginPage.writeCorrectForPasswordField(correctPassword);
+    }
+
+    @Then("Check {string} message about dont match username")
+    public void checkMessageAboutDontMatchUsername(String error) {
+        loginPage.checkMessageAboutDontMatchUsername(error);
+    }
+
+
+    @Then("Login is successful")
+    public void loginIsSuccessful() {
+        loginPage.loginIsSuccessful();
+    }
 }
